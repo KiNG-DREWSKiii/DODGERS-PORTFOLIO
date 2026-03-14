@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dodgers-quant-portfolio"
+version = "0.1.0"
+description = "Baseball analytics portfolio built around public-data quantitative research projects."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Drew Goldman" }
+]
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.25",
+  "scikit-learn>=1.4",
+  "matplotlib>=3.8",
+  "jupyter>=1.0",
+  "pybaseball>=2.2",
+  "scipy>=1.11",
+  "xgboost>=2.0",
+  "statsmodels>=0.14",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

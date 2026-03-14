@@ -1,0 +1,1 @@
+"""Swing decision model project."""
