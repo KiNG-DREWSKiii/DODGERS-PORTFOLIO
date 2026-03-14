@@ -8,18 +8,22 @@ Can public pitch-tracking features be used to identify interpretable pitch-shape
 
 Public Statcast-style pitch data pulled through `pybaseball`-compatible workflows.
 
+## Features
+
+Release speed, horizontal movement, vertical movement, and plate location.
+
 ## Method
 
-Features included release speed, horizontal and vertical movement, location features, and selected release characteristics where available. After cleaning and standardization, KMeans clustering was used to group similar pitch shapes. PCA was used for low-dimensional visualization.
+Movement and velocity features were cleaned, standardized, and clustered with KMeans. PCA was used for two-dimensional visualization.
 
-## Preliminary Findings
+## Results
 
-This workflow is designed to surface pitch families with similar shape characteristics and provide a foundation for downstream analysis such as whiff tendency, command profile, or pitcher-specific design questions. Current outputs are exploratory and intended as a baseline rather than a final production model.
+The initial clustering separates broad pitch-shape families based on movement and velocity. The current output is most useful as a starting point for pitcher-level review, outcome analysis, and feature refinement.
 
 ## Limitations
 
 Public data is incomplete relative to proprietary team datasets. Cluster structure is sensitive to feature selection, preprocessing, and the chosen number of clusters.
 
-## Next Steps
+## Next steps
 
 Incorporate pitcher handedness, compare cluster stability, and connect pitch-shape groups to outcome metrics such as whiff rate, chase rate, and run value.
