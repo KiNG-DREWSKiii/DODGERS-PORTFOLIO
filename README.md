@@ -48,3 +48,9 @@ bash scripts/run_project1.sh
 ## Example Output
 
 ![Pitch Shape Clusters](figures/pitch_shape_clusters.png)
+
+Sample run: March 28-31, 2024.
+
+- Clusters were fit on movement and velocity features from a four-day Statcast sample.
+- The initial separation produces broad movement-based pitch families rather than pitcher-specific arsenals.
+- The output is most useful as a starting point for pitcher-level review and outcome analysis.
