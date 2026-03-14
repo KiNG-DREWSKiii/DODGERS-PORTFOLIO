@@ -1,8 +1,11 @@
 # Dodgers Quant Portfolio
 
-Public baseball analytics portfolio built by Drew Goldman to demonstrate quantitative research ability using Python and public Statcast-style data.
+Author: Drew Goldman  
+Santa Monica, CA
 
-This repository highlights three applied projects in pitch modeling, swing decision analysis, and run value estimation. It is designed to showcase clean analytical workflow, reproducible research habits, and clear technical communication for baseball operations and quantitative analysis roles.
+This repository contains a collection of baseball analytics projects built using Python and public Statcast-style data. The goal of the portfolio is to demonstrate quantitative research skills relevant to baseball operations, including data ingestion, feature engineering, machine learning modeling, visualization, and clear analytical reporting.
+
+The projects explore questions related to pitch movement, swing decisions, and run value estimation using reproducible workflows designed for research environments.
 
 ## Featured Project
 
@@ -19,7 +22,7 @@ The Los Angeles Dodgers Junior Quantitative Analyst role calls for strong quanti
 - concise writeups that communicate methods and limitations
 - a workflow that supports iterative research rather than one-off notebooks
 
-## Projects
+## Featured Projects
 
 ### 1. Pitch Shape Clustering
 
@@ -33,26 +36,27 @@ Builds a baseline classifier for swing versus take behavior using location, coun
 
 Estimates context-aware run value using count state, pitch characteristics, and outcome information. The project highlights strategy-oriented modeling and connects pitch-level outcomes to baseball value.
 
-## Tools and Skills
+## Tools Used
 
 - Python
+- pandas
+- NumPy
+- scikit-learn
+- pybaseball
+- matplotlib
 - SQL
 - MATLAB
 - C++
 - PyTorch
-- machine learning
-- statistical analysis
-- time-series analysis
-- data visualization
-- research workflows
+- statistical modeling and machine learning
 
 ## Repository layout
 
 - `src/`: reusable utilities and project modules
+- `notebooks/`: exploratory analysis and project narratives
+- `reports/`: concise research summaries
+- `data/`: raw and processed datasets
 - `docs/`: role alignment, roadmap, and resume-oriented summaries
-- `data/`: raw and processed data directories
-- `reports/`: concise research memos for each project
-- `notebooks/`: exploratory and presentation-ready notebooks
 - `tests/`: lightweight validation for shared utilities
 
 ## Setup
@@ -70,6 +74,18 @@ Run the featured project:
 python -m src.project1_pitch_shape.main
 ```
 
+## Running Project 1
+
+```bash
+python -m src.project1_pitch_shape.main
+```
+
+Or:
+
+```bash
+bash scripts/run_project1.sh
+```
+
 Optional explicit runs:
 
 ```bash
@@ -83,6 +99,16 @@ Shell helper:
 ```bash
 bash scripts/run_project1.sh
 ```
+
+## Example Output
+
+Generated from the Project 1 clustering workflow on a small March 2024 Statcast sample.
+
+![Pitch Clusters](figures/pitch_shape_clusters.png)
+
+## Application Note
+
+This repository was created as a public demonstration of quantitative research workflows applied to baseball data. It is intended to showcase analytical thinking, reproducible modeling practices, and clear technical communication for baseball operations and quantitative analysis roles.
 
 ## Research approach
 
